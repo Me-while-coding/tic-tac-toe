@@ -8,6 +8,22 @@ let newGameBtn = document.querySelector(".newGame-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 let clickCount = 0;
+chooseOpt();
+function chooseOpt(){
+let Opt = (prompt("enter o or x")).toUpperCase();
+console.log(Opt);
+if(Opt === "O"){
+    turnO = true
+}
+else if(Opt === "X"){
+    turnO = false;
+}
+else{
+    alert("Wrong input");
+    chooseOpt();
+}
+
+}
 boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
         clickCount++;
@@ -70,6 +86,7 @@ let resetGame = ()=>{
          }
          msgContainer.classList.add("hide");
          clickCount = 0;
+         chooseOpt();
 };
 
 newGameBtn.addEventListener("click",resetGame)
