@@ -1,0 +1,6 @@
+ // we want the boxes in the game to be buttons so that they are clickable
+      and some work could be done on clicking them.
+    
+
+    colors chosen : C3F73A,68B684,094D92,1C1018
+    lime,mint,polynesian blue,licorice
